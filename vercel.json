@@ -1,5 +1,11 @@
 {
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
-  ]
+  ],
+  "build": {
+    "env": {
+      "GENERATE_SOURCEMAP": "false"
+    }
+  },
+  "outputDirectory": "build"
 }
